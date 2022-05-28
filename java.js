@@ -26,4 +26,4 @@
 //--git remote add origin https://github.com/OneProgrammist/project.git
 //добавление данных в репозиторий ---git push -u origin master
 
-alert("тестовый");
+alert("Старт");
