@@ -26,4 +26,43 @@
 //--git remote add origin https://github.com/OneProgrammist/project.git
 //добавление данных в репозиторий ---git push -u origin master
 
-alert("тестовый текст");
+//alert("тестовый текст");
+
+// let rezul = "";
+
+// first: for ( let i = 1;i<7;i++){
+//     console.log(`Первый уровень: ${i}`);
+//     for (let j = 1;j<i;j++){
+//         rezul += "*";
+//         if (j ===2) continue first;
+//         console.log(`Второй уровень: ${j}`);
+//     }
+//     rezul += "\n";
+// }
+
+// console.log(rezul);
+
+
+// const calc = (a,b) => {return a+b} ;
+
+let bak = {
+    name: 'test',
+    lang: 23,
+    colors: {
+        one: 'back',
+        two: 'red'
+    }
+};
+
+for (let key in bak){
+
+    if (typeof(bak[key]) === 'object'){
+        for (let i in bak[key]){
+            console.log(`это ключ ${i} и его значение ${bak[key][i]}`);
+        }
+    } else {
+    console.log(`это ключ ${key} и значение ${bak[key]}`);
+    }
+}
+
+console.log(bak);
